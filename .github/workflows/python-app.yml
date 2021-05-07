@@ -44,6 +44,16 @@ jobs:
       run: |
         seleniumbase install chromedriver
         seleniumbase install geckodriver
+    - name: Install allure
+      run: pip install allure-pytest
+    - name: Create a temp artifact folder named `output`
+      run: mkdir output
     - name: Run Tests
-      run: |
-        pytest
+      run: pytest --alluredir=output
+    - name: Collect Allure files and generate allure-report folder
+      run: allure generate output
+    - name: Publishing Allure artifact to GitHub Actions
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-report
