@@ -10,12 +10,8 @@ from pages.results import DuckDuckGoResultPage
 def browser():
     # Initialize ChromeDriver
     options = ChromeOptions()
-    options.add_argument("no-sandbox")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=800,600")
-    options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--headless")
-    driver = Chrome(options)
+    driver = Chrome(options=options)
     # Wait implicitly for elements to be ready before attempting interactions
     driver.implicitly_wait(10)
 
