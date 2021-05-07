@@ -10,7 +10,7 @@ from pages.results import DuckDuckGoResultPage
 def browser():
     # Initialize ChromeDriver
     # driver = Chrome()
-    driver = webdriver.Remote(command_executor="http://hub:4444/wd/hub", desired_capabilities=DesiredCapabilities.CHROME)
+    driver = webdriver.Remote(command_executor="http://hub:4444/wd/hub", desired_capabilities=DesiredCapabilities.FIREFOX)
     # Wait implicitly for elements to be ready before attempting interactions
     driver.implicitly_wait(10)
 
