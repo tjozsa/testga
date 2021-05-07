@@ -38,6 +38,8 @@ jobs:
       run: |
         sudo apt install google-chrome-stable
         sudo apt-get install firefox
+    - name: Install seleniumbase
+      run: pip install seleniumbase
     - name: Install chromedriver and geckodriver (Firefox Webdriver)
       run: |
         seleniumbase install chromedriver
