@@ -22,8 +22,24 @@ def browser():
     # Return the driver object at the end of setup
     return driver
 
+@pytest.fixture
+def browser2():
+    # Initialize ChromeDriver
+    # options = ChromeOptions()
+    # options.add_argument("--headless")
+    # driver = Chrome(options=options)
+    # Create a desired capabilities object as a starting point.
+    capabilities = DesiredCapabilities.CHROME.copy()
 
-def test_basic_duckduckgo_search(browser):
+    driver = Remote('http://hub:4444/wd/hub', desired_capabilities=capabilities)
+    # Wait implicitly for elements to be ready before attempting interactions
+    driver.implicitly_wait(10)
+
+    # Return the driver object at the end of setup
+    return driver
+
+  
+def basic_duckduckgo_search(browser):
     PHRASE = 'panda'
 
     search_page = DuckDuckGoSearchPage(browser)
@@ -40,3 +56,8 @@ def test_basic_duckduckgo_search(browser):
     assert result_page.phrase_result_count(PHRASE) > 0
     assert result_page.search_input_value() == PHRASE
 
+def test_chrome_basic_duckduckgo_search(browser2):
+    basic_duckduckgo_search(browser2)
+
+def test_ffox_basic_duckduckgo_search(browser):
+    basic_duckduckgo_search(browser)
