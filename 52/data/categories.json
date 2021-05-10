@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, version: }\nStacktrace:\n    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:118)\n    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:85)\n    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:69)\n    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)\n    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)\n    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:865)\n    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:535)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:146)\n    at org.seleniumhq.jetty9.security.SecurityHandler.handle (SecurityHandler.java:548)\n    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:257)\n    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:1595)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:255)\n    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1340)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:203)\n    at org.seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:473)\n    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:1564)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:201)\n    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1242)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:144)\n    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)\n    at org.seleniumhq.jetty9.server.Server.handle (Server.java:503)\n    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:364)\n    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:260)\n    at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded (AbstractConnection.java:305)\n    at org.seleniumhq.jetty9.io.FillInterest.fillable (FillInterest.java:103)\n    at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run (ChannelEndPoint.java:118)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask (EatWhatYouKill.java:333)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce (EatWhatYouKill.java:310)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce (EatWhatYouKill.java:168)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce (EatWhatYouKill.java:132)\n    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:765)\n    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run (QueuedThreadPool.java:683)\n    at java.lang.Thread.run (Thread.java:748)",
+      "children" : [ {
+        "name" : "test_chrome_basic_duckduckgo_search",
+        "uid" : "1763d8b31db1395a",
+        "parentUid" : "01168e6a4767884a85225714b1e3deec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1620649158104,
+          "stop" : 1620649158104,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "01168e6a4767884a85225714b1e3deec"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: Error forwarding the new session Empty pool of VM for setup Capabilities {acceptInsecureCerts: true, browserName: firefox, marionette: true}\nStacktrace:\n    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:118)\n    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:85)\n    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:69)\n    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)\n    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)\n    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:865)\n    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:535)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:146)\n    at org.seleniumhq.jetty9.security.SecurityHandler.handle (SecurityHandler.java:548)\n    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:257)\n    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:1595)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:255)\n    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1340)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:203)\n    at org.seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:473)\n    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:1564)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:201)\n    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1242)\n    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:144)\n    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)\n    at org.seleniumhq.jetty9.server.Server.handle (Server.java:503)\n    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:364)\n    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:260)\n    at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded (AbstractConnection.java:305)\n    at org.seleniumhq.jetty9.io.FillInterest.fillable (FillInterest.java:103)\n    at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run (ChannelEndPoint.java:118)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask (EatWhatYouKill.java:333)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce (EatWhatYouKill.java:310)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce (EatWhatYouKill.java:168)\n    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run (EatWhatYouKill.java:126)\n    at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run (ReservedThreadExecutor.java:366)\n    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:765)\n    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run (QueuedThreadPool.java:683)\n    at java.lang.Thread.run (Thread.java:748)",
+      "children" : [ {
+        "name" : "test_ffox_basic_duckduckgo_search",
+        "uid" : "35f0c356c3617455",
+        "parentUid" : "cbd3a39811167235253fbaed31e51158",
+        "status" : "broken",
+        "time" : {
+          "start" : 1620649158303,
+          "stop" : 1620649158303,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbd3a39811167235253fbaed31e51158"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

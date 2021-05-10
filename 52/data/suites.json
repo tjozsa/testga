@@ -1,0 +1,39 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "main.tests.suite1",
+    "children" : [ {
+      "name" : "test_mythings",
+      "children" : [ {
+        "name" : "test_chrome_basic_duckduckgo_search",
+        "uid" : "1763d8b31db1395a",
+        "parentUid" : "70ff97472eafc5132fc8d99e192c253a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1620649158104,
+          "stop" : 1620649158104,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ffox_basic_duckduckgo_search",
+        "uid" : "35f0c356c3617455",
+        "parentUid" : "70ff97472eafc5132fc8d99e192c253a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1620649158303,
+          "stop" : 1620649158303,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70ff97472eafc5132fc8d99e192c253a"
+    } ],
+    "uid" : "30ae561fc9f02fce4dcc8c471757d2d1"
+  } ],
+  "name" : "suites"
+}

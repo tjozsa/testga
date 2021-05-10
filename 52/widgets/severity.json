@@ -1,0 +1,21 @@
+[ {
+  "uid" : "1763d8b31db1395a",
+  "name" : "test_chrome_basic_duckduckgo_search",
+  "time" : {
+    "start" : 1620649158104,
+    "stop" : 1620649158104,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "35f0c356c3617455",
+  "name" : "test_ffox_basic_duckduckgo_search",
+  "time" : {
+    "start" : 1620649158303,
+    "stop" : 1620649158303,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
