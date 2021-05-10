@@ -14,14 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: python:latest
-      options: --network-alias testHost
     env:
       SELENIUM_HUB_HOST: hub
     services:
       hub:
-        image: selenium/hub:3.141.59-gold
+        image: selenium/hub
       firefox:
-        image: selenium/node-firefox:3.141.59-gold
+        image: selenium/node-firefox
+        env:
+          HUB_HOST: hub
+          HUB_PORT: 4444
+      chrome:
+        image: selenium/node-chrome
         env:
           HUB_HOST: hub
           HUB_PORT: 4444
