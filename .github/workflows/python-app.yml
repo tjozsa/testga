@@ -35,6 +35,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install allure
       run: |
+        apt-get update 
+        apt-get install -y software-properties-common
         apt-add-repository ppa:qameta/allure
         apt-get update 
         apt-get install -y allure
