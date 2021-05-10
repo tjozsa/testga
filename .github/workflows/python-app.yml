@@ -38,7 +38,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         ls -la
-        pip install -r requirements.txt
+        pip install -r main/requirements.txt
     - name: Install allure
       run: |
         curl -o allure-2.13.9.tgz -Ls https://github.com/allure-framework/allure2/releases/download/2.13.9/allure-2.13.9.tgz
