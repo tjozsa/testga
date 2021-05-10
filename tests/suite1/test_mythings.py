@@ -15,7 +15,7 @@ def browser():
     # Create a desired capabilities object as a starting point.
     capabilities = DesiredCapabilities.FIREFOX.copy()
 
-    driver = Remote('http://testHost:4444/wd/hub', desired_capabilities=capabilities)
+    driver = Remote('http://hub:4444/wd/hub', desired_capabilities=capabilities)
     # Wait implicitly for elements to be ready before attempting interactions
     driver.implicitly_wait(10)
 
