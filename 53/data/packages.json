@@ -4,12 +4,12 @@
     "name" : "main.tests.suite1.test_mythings",
     "children" : [ {
       "name" : "test_chrome_basic_duckduckgo_search",
-      "uid" : "1763d8b31db1395a",
+      "uid" : "ba8624ee92e5ea47",
       "parentUid" : "ab6e43696c1ed07178753c324ad00302",
       "status" : "broken",
       "time" : {
-        "start" : 1620649158104,
-        "stop" : 1620649158104,
+        "start" : 1620650423085,
+        "stop" : 1620650423085,
         "duration" : 0
       },
       "flaky" : false,
@@ -17,12 +17,12 @@
       "parameters" : [ ]
     }, {
       "name" : "test_ffox_basic_duckduckgo_search",
-      "uid" : "35f0c356c3617455",
+      "uid" : "8102bad480087e",
       "parentUid" : "ab6e43696c1ed07178753c324ad00302",
       "status" : "broken",
       "time" : {
-        "start" : 1620649158303,
-        "stop" : 1620649158303,
+        "start" : 1620650423280,
+        "stop" : 1620650423280,
         "duration" : 0
       },
       "flaky" : false,
