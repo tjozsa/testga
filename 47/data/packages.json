@@ -4,13 +4,13 @@
     "name" : "main.tests.suite1.test_mythings",
     "children" : [ {
       "name" : "test_basic_duckduckgo_search",
-      "uid" : "30edb03d87248e90",
+      "uid" : "281658f54a61edf",
       "parentUid" : "ab6e43696c1ed07178753c324ad00302",
       "status" : "passed",
       "time" : {
-        "start" : 1620644069787,
-        "stop" : 1620644076537,
-        "duration" : 6750
+        "start" : 1620644430941,
+        "stop" : 1620644438058,
+        "duration" : 7117
       },
       "flaky" : false,
       "newFailed" : false,
