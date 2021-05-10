@@ -34,7 +34,7 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install allure
-      run: sudo apt-get install -y allure
+      run: apt-get install -y allure
     - name: Install allure-pytest
       run: pip install allure-pytest
     - name: Create a temp artifact folder named `output`
