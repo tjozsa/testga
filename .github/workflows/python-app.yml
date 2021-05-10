@@ -29,10 +29,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
