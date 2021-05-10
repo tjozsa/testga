@@ -6,13 +6,13 @@
       "name" : "selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette",
       "children" : [ {
         "name" : "test_basic_duckduckgo_search",
-        "uid" : "ea04340a62219ba4",
+        "uid" : "bfa7b906bc400adf",
         "parentUid" : "7d9b60d800cf3fd12a6cf5db5977a480",
         "status" : "broken",
         "time" : {
-          "start" : 1620646094140,
-          "stop" : 1620646100794,
-          "duration" : 6654
+          "start" : 1620646106875,
+          "stop" : 1620646113661,
+          "duration" : 6786
         },
         "flaky" : false,
         "newFailed" : false,
