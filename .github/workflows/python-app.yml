@@ -39,8 +39,6 @@ jobs:
         pip install flake8 pytest
         ls -la
         pip install -r main/requirements.txt
-    - name: Install allure-pytest
-      run: pip install allure-pytest
     - name: Run Tests
       run: pytest --alluredir=allure-results
     - name: Allure Report action from marketplace
