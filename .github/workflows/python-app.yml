@@ -33,16 +33,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Install Chrome and Firefox
-      run: |
-        sudo apt install google-chrome-stable
-        sudo apt-get install firefox
-    - name: Install seleniumbase
-      run: pip install seleniumbase
-    - name: Install chromedriver and geckodriver (Firefox Webdriver)
-      run: |
-        seleniumbase install chromedriver
-        seleniumbase install geckodriver
     - name: Install allure
       run: sudo apt-get install -y allure
     - name: Install allure-pytest
