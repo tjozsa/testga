@@ -1,6 +1,6 @@
 from selenium.webdriver.common.keys import Keys
 import pytest
-from selenium.webdriver import Chrome, ChromeOptions, Remote
+from selenium.webdriver import Chrome, ChromeOptions, Remote, DesiredCapabilities
 import time
 from pages.search import DuckDuckGoSearchPage
 from pages.results import DuckDuckGoResultPage
