@@ -50,12 +50,8 @@ jobs:
         apt-get install -y default-jre
     - name: Install allure-pytest
       run: pip install allure-pytest
-    - name: Create a temp artifact folder named `output`
-      run: mkdir output
     - name: Run Tests
-      run: pytest --alluredir=output
-    - name: Collect Allure files and generate allure-report folder
-      run: allure generate output
+      run: pytest --alluredir=allure-results
     - name: Publishing Allure artifact to GitHub Actions
       uses: actions/upload-artifact@v2
       with:
