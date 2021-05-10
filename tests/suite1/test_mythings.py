@@ -39,10 +39,10 @@ def browser2():
     return driver
 
   
-def basic_duckduckgo_search(browser):
+def basic_duckduckgo_search(b):
     PHRASE = 'panda'
 
-    search_page = DuckDuckGoSearchPage(browser)
+    search_page = DuckDuckGoSearchPage(b)
     search_page.load()
 
     time.sleep(3)
