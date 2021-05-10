@@ -1,6 +1,6 @@
 from selenium.webdriver.common.keys import Keys
 import pytest
-from selenium.webdriver import Chrome, ChromeOptions
+from selenium.webdriver import Chrome, ChromeOptions, Remote
 import time
 from pages.search import DuckDuckGoSearchPage
 from pages.results import DuckDuckGoResultPage
@@ -9,9 +9,13 @@ from pages.results import DuckDuckGoResultPage
 @pytest.fixture
 def browser():
     # Initialize ChromeDriver
-    options = ChromeOptions()
-    options.add_argument("--headless")
-    driver = Chrome(options=options)
+    # options = ChromeOptions()
+    # options.add_argument("--headless")
+    # driver = Chrome(options=options)
+    # Create a desired capabilities object as a starting point.
+    capabilities = DesiredCapabilities.FIREFOX.copy()
+
+    driver = Remote('http://testHost:4444/wd/hub', desired_capabilities=capabilities)
     # Wait implicitly for elements to be ready before attempting interactions
     driver.implicitly_wait(10)
 
