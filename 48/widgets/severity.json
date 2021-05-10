@@ -1,0 +1,11 @@
+[ {
+  "uid" : "ea04340a62219ba4",
+  "name" : "test_basic_duckduckgo_search",
+  "time" : {
+    "start" : 1620646094140,
+    "stop" : 1620646100794,
+    "duration" : 6654
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

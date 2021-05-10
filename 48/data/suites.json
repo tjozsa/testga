@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "main.tests.suite1",
+    "children" : [ {
+      "name" : "test_mythings",
+      "children" : [ {
+        "name" : "test_basic_duckduckgo_search",
+        "uid" : "ea04340a62219ba4",
+        "parentUid" : "70ff97472eafc5132fc8d99e192c253a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1620646094140,
+          "stop" : 1620646100794,
+          "duration" : 6654
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70ff97472eafc5132fc8d99e192c253a"
+    } ],
+    "uid" : "30ae561fc9f02fce4dcc8c471757d2d1"
+  } ],
+  "name" : "suites"
+}
