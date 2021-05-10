@@ -39,15 +39,6 @@ jobs:
         pip install flake8 pytest
         ls -la
         pip install -r main/requirements.txt
-    - name: Install allure
-      run: |
-        curl -o allure-2.13.9.tgz -Ls https://github.com/allure-framework/allure2/releases/download/2.13.9/allure-2.13.9.tgz
-        tar -zxvf allure-2.13.9.tgz -C /opt/
-        ln -s /opt/allure-2.13.9/bin/allure /usr/bin/allure
-    - name: Install Java
-      run: |
-        apt-get update
-        apt-get install -y default-jre
     - name: Install allure-pytest
       run: pip install allure-pytest
     - name: Run Tests
