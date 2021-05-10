@@ -20,12 +20,12 @@ jobs:
       hub:
         image: selenium/hub
       firefox:
-        image: selenium/node-firefox
+        image: selenium/node-firefox:88.0
         env:
           HUB_HOST: hub
           HUB_PORT: 4444
       chrome:
-        image: selenium/node-chrome
+        image: selenium/node-chrome:90.0
         env:
           HUB_HOST: hub
           HUB_PORT: 4444
