@@ -40,8 +40,8 @@ jobs:
         ln -s /opt/allure-2.13.9/bin/allure /usr/bin/allure
     - name: Install Java
       run: |
-        apt update
-        apt install -y openjdk-8-jre-headless
+        apt-get update
+        apt-get install -y default-jre
     - name: Install allure-pytest
       run: pip install allure-pytest
     - name: Create a temp artifact folder named `output`
